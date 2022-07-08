@@ -15,10 +15,12 @@ package Com.BridgeLabz;
         int dailyWage=0;
         int attendence= (int) (Math.floor(Math.random()*10))%3;
 
+
         if(attendence==IS_PRESENT) {
             System.out.println("Employee is Working Full Time");
               dailyWage=WAGE_PER_HOUR*FULL_DAY_HOUR;
             System.out.println("Employee daily wage is :"+dailyWage);
+
         }
 
         else if (attendence==IS_PART_TIME){
