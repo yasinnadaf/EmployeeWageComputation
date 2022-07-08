@@ -16,21 +16,23 @@ package Com.BridgeLabz;
         int attendence= (int) (Math.floor(Math.random()*10))%3;
 
 
-        if(attendence==IS_PRESENT) {
-            System.out.println("Employee is Working Full Time");
-              dailyWage=WAGE_PER_HOUR*FULL_DAY_HOUR;
-            System.out.println("Employee daily wage is :"+dailyWage);
+        switch (attendence) {
 
-        }
+            case IS_PRESENT:
+               System.out.println("Employee is Working Full Time");
+               dailyWage=WAGE_PER_HOUR*FULL_DAY_HOUR;
+               System.out.println("Employee daily wage is :"+dailyWage);
+               break;
 
-        else if (attendence==IS_PART_TIME){
-            System.out.println("Employee is working part time");
-             dailyWage=WAGE_PER_HOUR*PART_TIME_HOUR;
-         System.out.println("Employee daily wage is: "+dailyWage);
+            case IS_PART_TIME:
+               System.out.println("Employee is working part time");
+               dailyWage=WAGE_PER_HOUR*PART_TIME_HOUR;
+               System.out.println("Employee daily wage is: "+dailyWage);
+               break;
 
-        }
-        else {
+            default:
             System.out.println("Employee is absent");
+               break;
         }
         
 
