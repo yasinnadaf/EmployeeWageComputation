@@ -11,7 +11,7 @@ package Com.BridgeLabz;
     static final int TOTAL_WORK_HOURS=100;
 
 
-    public static void main(String[] args) {
+    static void calculateWage() {
         System.out.println("Welcome to Employee Wage Computation");
         int totalHours=0;
         int day=0;
@@ -46,4 +46,8 @@ package Com.BridgeLabz;
 
 
     }
+
+     public static void main(String[] args) {
+         calculateWage();
+     }
  }
